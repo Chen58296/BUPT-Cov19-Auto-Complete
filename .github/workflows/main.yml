@@ -19,7 +19,7 @@ jobs:
       - id: step3
         run: python --version
       - id: step4
-        run: echo ${{ secrets.USERNAME }}
+        run: ls
       - id: step5
         run : echo ${{ secrets.PASSWORD }}
     
