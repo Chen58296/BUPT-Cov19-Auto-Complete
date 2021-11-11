@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-python@v2.2.2
         with:
           python-version: 3.7
+      - uses: actions/checkout@v2
       - id: step1
         run: echo "::set-output name=test::hello"
       - id: step2
@@ -19,9 +20,12 @@ jobs:
       - id: step3
         run: python --version
       - id: step4
-        run: ls
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - id: step5
-        run : echo ${{ secrets.PASSWORD }}
+        run: ls
+          
     
 
 
