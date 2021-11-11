@@ -15,8 +15,8 @@ location_url = 'https://api.map.baidu.com/reverse_geocoding/v3/?output=json&coor
 
 def login():
     data = {
-        'username': '2021140758',
-        'password': '06262311'
+        'username': 'xxxxx',
+        'password': 'xxxxx'
     }
 
     r = requests.post(url=login_url, data=data)
