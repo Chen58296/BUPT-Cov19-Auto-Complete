@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-python@v2.2.2
         with:
           python-version: 3.7
-      - uses: actions/BUPT-Cov19-Auto-Complete@v2
+      - uses: actions/checkout@v2
       - id: step1
         run: echo "::set-output name=test::hello"
       - id: step2
