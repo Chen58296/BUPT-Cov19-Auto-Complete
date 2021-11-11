@@ -14,7 +14,9 @@ jobs:
           python-version: 3.7
       - uses: actions/checkout@v2
       - id: step1
-        run: cd BUPTCovFormAutoComplete
+        run: |
+            cd BUPTCovFormAutoComplete
+            ls -al
       - id: step2
         run: python --version
       - id: step3
