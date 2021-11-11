@@ -1,7 +1,5 @@
 name: Cov19 Auto Complete Action
-on:
-  schedule:
-    - cron: "*/15 0,23 * * *"
+on: [push]
 jobs:
   job1:
     runs-on: ubuntu-latest
