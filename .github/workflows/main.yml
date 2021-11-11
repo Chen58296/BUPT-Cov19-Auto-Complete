@@ -1,7 +1,7 @@
 name: Cov19 Auto Complete Action
-on: [push]
-#   schedule:
-#     - cron:  '0 5 * * *'
+on: 
+    schedule:
+    - cron:  '20 9 * * *'
     
 jobs:
   job1:
